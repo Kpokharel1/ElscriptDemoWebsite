@@ -7,3 +7,7 @@ var typed = new Typed('.typed-words', {
     loop: true,
     showCursor: true
 });
+const navbar = document.getElementById('navbar')
+navbar.addEventListener('scroll',() =>{
+    navbar.classList.add('fixed-top')
+})

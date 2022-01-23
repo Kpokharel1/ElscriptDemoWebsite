@@ -22,23 +22,25 @@
   </head>
   <body>
     <!-- Navbar-section -->
-    <div class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+    <div class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand"><img src="/img/logo.png" class="img-fluid" alt="" style="width: 220px;"></a>
-
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-4">
               <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item mx-4">
-              <a href="#home" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item mx-4">
-              <a href="#home" class="nav-link">Services</a>
+              <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item mx-4">
-              <a href="#home" class="nav-link">Contact us</a>
+              <a href="#contact" class="nav-link">Contact us</a>
             </li>
           </ul>
         </div>
@@ -48,7 +50,7 @@
     </div>
     <!-- home-section -->
     <section
-      id="home-section"
+      id="home"
       style="
         background-image: url(/img/background.jpg);
         background-position: center;
@@ -73,6 +75,7 @@
           <div class="col mx-5">
             <h3 class="f-heading">Imagine</h3>
             <p>Imagine what your goal is and we will help you with</p>
+            
             <ul>
               <li><i class="fas fa-check f-icons"></i>Customer Experience</li>
               <li><i class="fas fa-check f-icons"></i>Product Management</li>
@@ -143,7 +146,7 @@
                 <i class="fas fa-laptop fa-4x" style="color: #32dbc6"></i>
               </div>
               <div class="col-md-9" style="padding: 10px">
-                <h4>Web design</h4>
+                <h4 style="color: #32dbc6; font-size: 30px;">Web design</h4>
                 <p>
                   Includes everything from designing to programming web
                   application and maintaining database
@@ -161,7 +164,7 @@
                 ></i>
               </div>
               <div class="col-md-9">
-                <h4 class="heading-services">eCommerce</h4>
+                <h4 style="color: #32dbc6; font-size: 30px;">eCommerce</h4>
                 <p>
                   We develop the system to assist you sell or buy any product
                   through intenet. It is fully automated and it is highly
@@ -177,7 +180,7 @@
                     <i class="fas fa-digital-tachograph fa-4x" style="color: #32dbc6;"></i>
                  </div>
                  <div class="col-md-9">
-                    <h4>Hosting and Domain</h4>
+                    <h4 style="color: #32dbc6; font-size: 30px;">Hosting and Domain</h4>
                     <p>
                       Includes everything from domain registration to webhosting with
                       cloud support
@@ -195,7 +198,7 @@
                 <i class="fas fa-desktop fa-4x" style="color: #32dbc6"></i>
               </div>
               <div class="col-md-9">
-                <h4>App Development</h4>
+                <h4 style="color: #32dbc6; font-size: 30px;">App Development</h4>
                 <p>
                   Android/IOS app design and development which is supported by
                   every portable device. Highly secure and very fast
@@ -210,7 +213,7 @@
                 <i class="fas fa-puzzle-piece fa-4x" style="color: #32dbc6;"></i>
               </div>
               <div class="col-md-9">
-                <h4>Data Entry</h4>
+                <h4 style="color: #32dbc6; font-size: 30px;">Data Entry</h4>
                 <p>
                   Entering data in a database and processing it. It includes
                   entering any kind of contents, analyzing it, making reports and
@@ -227,7 +230,7 @@
 
               </div>
               <div class="col-md-9">
-                <h4>Mentorship and Support</h4>
+                <h4 style="color: #32dbc6; font-size: 30px;">Mentorship and Support</h4>
             <p>
               We help and support our customer who need any kind of business
               idea or online mentorship. We don't only sell products, also help
@@ -244,7 +247,7 @@
 
               </div>
               <div class="col-md-9">
-                <h4>Graphics & UI/UX Design</h4>
+                <h4 style="color: #32dbc6; font-size: 30px;">Graphics & UI/UX Design</h4>
             <p>
               We develop the layout and productive design for web application,
               mobile app,advertisements, brochures, magazines and social media.
@@ -260,7 +263,7 @@
 
               </div>
               <div class="col-md-9">
-                <h4>SEO and Marketing</h4>
+                <h4 style="color: #32dbc6; font-size: 30px;">SEO and Marketing</h4>
             <p>
               Promoting your business accross the digital world by SEO
               optimizations and many more
@@ -276,7 +279,7 @@
 
             </div>
             <div class="col-md-9">
-              <h4>Graphics & UI/UX Design</h4>
+              <h4 style="color: #32dbc6; font-size: 30px;">Graphics & UI/UX Design</h4>
               <p>
                 We develop the layout and productive design for web application,
                 mobile app,advertisements, brochures, magazines and social media.
@@ -284,6 +287,56 @@
 
             </div>
           </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-section -->
+    <section id="contact">
+      <div class="container my-5">
+        <h1 class="s-heading">Contact us
+          
+        </h1>
+
+        <div class="row my-4">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="fullname" class="form-label">Fullname</label>
+                <input type="text" class="form-control" id="fullname" style="border-radius: 20px;">
+              </div>
+                
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" style="border-radius: 20px;">
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" style="border-radius: 20px;">
+                
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+               <textarea name="message" id="message" class="form-control" cols="30" rows="10" placeholder="Your message here"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary my-3">Send Message</button>
+            </form>
+
+          </div>
+          <div class="col-md-3 mx-5 my-3 bg-light">
+            <h4>Company:</h4>
+            <p>
+              <span style="color: #32dbc6;">Elscript Technology Pvt. Ltd.</span>
+            </p>
+            <h4>Headquater:</h4>
+            <p>
+              <span style="color: #32dbc6;">Kathmandu,Bagmati,44600, Nepal</span>
+            </p>
+            <h4>Phone:</h4>
+            <p>9818439664</p>
+            <h4>Email Address:</h4>
+            <p>contact@elscript.com</p>
+            
           </div>
         </div>
       </div>
